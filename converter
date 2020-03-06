@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require 'bundler/setup'
+require 'dry/cli'
+require_relative 'cli/commands'
+
+Dry::CLI.new(CLI::Commands).call
